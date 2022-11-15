@@ -91,13 +91,8 @@ const App = () => {
       };
 
     const handleSubmit = () => {
-      return( <Alert
-      message="Informational Notes"
-      description="Additional description and information about copywriting."
-      type="info"
-      showIcon
-    />)
-      // window.location.reload(true);
+
+      window.location.reload(true);
         };
   
 
