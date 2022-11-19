@@ -26,7 +26,7 @@ const Report = () => {
     const fetchStatus = async () => {
         const response = await fetch("https://api-all-app.herokuapp.com/sendmail")
         // const response_js = await response.json()
-        console.log(response_js)
+        // console.log(response_js)
         // setData(response_js) 
     }
 
