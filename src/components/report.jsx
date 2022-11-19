@@ -23,12 +23,12 @@ const Report = () => {
     const [tdy, setTdy] = useState(today)
     const [data, setData] = useState([])
 
-    // const fetchStatus = async () => {
-    //     const response = await fetch("https://localhost:8000/attendance")
-    //     const response_js = await response.json()
-    //     console.log(response_js)
-    //     setData(response_js) 
-    // }
+    const fetchStatus = async () => {
+        const response = await fetch("https://api-all-app.herokuapp.com/sendmail")
+        // const response_js = await response.json()
+        console.log(response_js)
+        // setData(response_js) 
+    }
 
     // useEffect(() => {
     //     fetchStatus()
@@ -46,7 +46,7 @@ const Report = () => {
       <Content>
    
             <Table style={{margin: 6}}  columns={columns}></Table>
-
+            <Button onClick={fetchStatus}>Submit</Button>
       </Content>
     </Layout></>
     )
